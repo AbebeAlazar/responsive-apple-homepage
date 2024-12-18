@@ -171,8 +171,18 @@ body {
 	vertical-align: top;
 }
 
+/* section .main-image-wrapper img {
+	width: 100%;
+} */
+
 /* Main Highlight */
+/* .mainly .main-highlight-wrapper .main-image-wrapper img{
+width: 100%;
+
+
+} */
 .main-highlight-wrapper {
+	display: block;
 	background: #fafafa;
 	text-align: center;
 	padding: 25px 0;
@@ -261,6 +271,7 @@ body {
 /*Fourth Highlight Section */
 .fourth-heghlight-wrapper {
 	display: flex;
+
 	-webkit-box-pack: justify;
 	justify-content: space-between;
 	background: #fff;
@@ -361,8 +372,185 @@ body {
 .sixth-heghlight-wrapper .right-side-wrapper {
 	background-image: url("../images/home/new-ipad.jpg");
 }
-
 .product-title-small {
 	font-weight: 700;
 	font-size: 45px;
 }
+
+
+
+
+@media(max-width:768px) {
+
+	.fourth-heghlight-wrapper {
+	     display: block;
+		background: #fff;
+	}
+	.fourth-heghlight-wrapper .right-side-wrapper {
+		height: 580px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		width: 100%;
+		margin: 1% 1% 0% 0.5%;
+		padding-top: 54px;
+	}
+	.fourth-heghlight-wrapper .left-side-wrapper {
+		height: 580px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		width: 100%;
+		/* margin: 1% 1% 0% 0.5%; */
+		padding-top: 54px;
+	}
+
+.fifth-heghlight-wrapper {
+	display: block;
+	background: #fff;
+}
+.fifth-heghlight-wrapper .left-side-wrapper{
+	/* height: 580px; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	/* margin: 1% 1% 0% 0.5%; */
+	padding-top: 54px;
+}
+.fifth-heghlight-wrapper .right-side-wrapper{
+	/* height: 580px; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+	
+	padding-top: 54px;
+}
+.sixth-heghlight-wrapper {
+	display: block;
+	background: #fff;
+}
+.sixth-heghlight-wrapper .right-side-wrapper{
+	height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	/* margin: 1% 1% 0% 0.5%; */
+	padding-top: 54px;
+}
+.sixth-heghlight-wrapper .left-side-wrapper{
+	height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	width: 100%;
+	/* margin: 1% 1% 0% 0.5%; */
+	padding-top: 54px;
+}
+
+.main-highlight-wrapper .main-image-wrapper img{
+	height: 580px;
+	  width: 600px;
+	  margin-right: 50%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  padding: 65px 20px;
+	  color: #fff;
+}
+.main-highlight-wrapper .model{
+	margin-right: 40%;
+}
+.main-highlight-wrapper .brief-description{
+margin-right: 40%;
+}
+.main-highlight-wrapper .product-title{
+
+	margin-right: 40%;
+}
+.main-highlight-wrapper .links-wrapper{
+margin-left: 10%;
+
+}
+
+	.second-hightlight-wrapper {
+		background-image: url("../images/home/iphone11-pro-bg.jpg");
+		height: 580px;
+		width: 100%;
+		margin: 0 auto;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 65px 20px;
+		color: #fff;
+	}
+
+	.title-wraper {
+	font-weight: 600;
+	font-size: 56px;
+	margin-right: 50%;
+}
+
+.description-wrapper {
+	font-size: 26px;
+	padding: 10px 0;
+	margin-right: 50%;
+}
+
+.price-wrapper {
+	color: #86868b;
+	font-size: 0.85em;
+	margin-right: 50%;
+}
+.links-wrapper ul li {
+	color: #06c;
+	text-decoration: none;
+	margin-right: 50%;
+}
+
+
+}
+
+@media (max-width: 768px) {
+	.footer-links-wrapper {
+	  display: block; /* Ensure each section stacks vertically */
+	}
+  
+	.footer-links-wrapper h3 {
+	  display: block;
+	  font-size: 16px; /* Adjust text size for smaller screens */
+	  margin-bottom: 10px;
+	  cursor: pointer; /* Add cursor to indicate clickability */
+	}
+  
+	.footer-links-wrapper ul {
+	  display: none; /* Hide links by default */
+	  padding-left: 20px;
+	}
+  
+	.footer-links-wrapper h3.expanded + ul {
+	  display: block; /* Show links when expanded */
+	}
+  
+	.footer-links-wrapper h3:after {
+	  font-family: "FontAwesome";
+	  content: "\f067"; /* Default "+" icon */
+	  position: absolute;
+	  right: 10px;
+	}
+  
+	.footer-links-wrapper h3.expanded:after {
+	  content: "\f00d"; /* Change to "x" icon */
+	}
+  }
+  
