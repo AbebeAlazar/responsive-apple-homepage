@@ -11,11 +11,11 @@ body {
 	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
 }
-
 /* Header Style */
 .header-wrapper {
-	height: 37px;
-	background: black;
+	position: fixed;
+	height: 50px;
+	background: rgb(37, 37, 37);
 	color: #fff;
 	font-weight: 200;
 	font-size: 0.75em;
@@ -25,10 +25,16 @@ body {
 	display: flex;
 	-webkit-box-pack: justify;
 	justify-content: space-between;
+	/* justify-content: flex-end; */
+	/*  */
 }
-
+.header-wrapper ul li{
+	position: relative;
+	bottom: 38px;
+   left: 250px;
+}
 .internal-wrapper {
-	width: 980px;
+	width: 1345px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
@@ -60,7 +66,7 @@ body {
 	display: block;
 }
 
-.header-wrapper .header-links-wrapper ul li.logo-link {
+.header-wrapper .internal-wrapper .logo-link {
 	padding: 12px 0 10px;
 }
 
@@ -271,9 +277,8 @@ width: 100%;
 /*Fourth Highlight Section */
 .fourth-heghlight-wrapper {
 	display: flex;
-
-	-webkit-box-pack: justify;
-	justify-content: space-between;
+	gap: 50px;
+	justify-content: center;
 	background: #fff;
 }
 
@@ -316,8 +321,8 @@ width: 100%;
 /*Fivth Highlight Section */
 .fifth-heghlight-wrapper {
 	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
+	gap: 50px;
+	justify-content: center;
 	background: #fff;
 }
 
@@ -357,8 +362,8 @@ width: 100%;
 /*Sixth Highlight Section */
 .sixth-heghlight-wrapper {
 	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
+	gap: 50px;
+	justify-content: center;
 	background: #fff;
 }
 
@@ -553,4 +558,5 @@ margin-left: 10%;
 	  content: "\f00d"; /* Change to "x" icon */
 	}
   }
+  
   
